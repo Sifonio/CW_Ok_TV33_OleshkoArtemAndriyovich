@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://images.pexels.com/photos/355770/pexels-photo-355770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="date"],
+textarea {
+    width: calc(100% - 40px);
+    padding: 12px;
+    margin: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#username {
+    display: block;
+    margin: 0 auto 0px auto;
+    width: 30%;
+}
+
+#password {
+    display: block;
+    margin: 0 auto 5px auto;
+    width: 30%;
+}
+
+#title {
+    display: inline-block;
+    margin: auto 20px auto;
+    width: 30%;
+}
+
+#newsDetail {
+    background-color: #f9fafa; 
+    padding: 5px;
+    border-radius: 12px;
+    margin: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+.buttons-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons-wrapper button {
+    margin: 10px 10px;
+    width: 140px;
+}
+
+.filter-buttons button {
+    margin-right: 5px; 
+}
+
+.filter-buttons button:last-child {
+    margin-right: 0; 
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3949ab;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+#newsList > div {
+    background: #f9f9f9;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    border-left: 6px solid #3949ab;
+    border-radius: 8px;
+}
+
+#newsList h3 {
+    margin-top: 0;
+}
+
+#newsList p {
+    font-size: 15px;
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 20px 20px 20px;
+}   
+
+.filter-section input,
+.filter-section button {
+    flex: 1;
+    min-width: 150px;
+}
+
+#newsContent {
+    margin: 20px 20px 30px 20px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+}
+
+#newsMeta {
+    display: block;
+    margin: 0 20px 30px 20px;
+    font-style: italic;
+    color: #666;
+}
+
+
+img {
+    max-width: calc(100% - 40px);
+    display: block;
+    margin: 10px 20px;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .filter-section {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Новини</title>
+</head>
+<body>
+    <h2>Список новин</h2>
+    <div>
+        <input type="text" id="authorFilter" placeholder="Фільтр за автором">
+        <input type="date" id="dateFilter">
+        <div class="filter-buttons">
+            <button onclick="loadNews()">Застосувати фільтр</button>
+            <button onclick="resetFilters()">Зкинути фільтри</button>
+            <button onclick="logout()">Вийти</button>
+        </div>
+
+    </div>
+    <div id="newsList"></div>
+    <button onclick="location.href='create.html'">Створити новину</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
